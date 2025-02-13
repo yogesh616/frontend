@@ -11,6 +11,15 @@ import PayOnline from './pages/PayOnline';
 import OurPolicy from './pages/OurPolicy';
 import HotelBooking from './pages/HotelBooking';
 import CarBooking from './pages/CarBooking';
+import TrainBooking from './pages/TrainBooking';
+import FlightBooking from './pages/FlightBooking';
+import VolvoBusBooking from './pages/VolvoBusBooking';
+import HolidayTour from './pages/HoliydayTour';
+import StudentTour from './pages/StudentTour';
+import GroupTour from './pages/GroupTour';
+import HoneyMoonTour from './pages/HoneyMoonTour';
+import About from './pages/About';
+import Service from './pages/Service';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +35,15 @@ root.render(
       <Route path="/our-policy" element={<OurPolicy />} />
       <Route path="/hotel-booking" element={<HotelBooking />} />
       <Route path="/car-list" element={<CarBooking />} />
+      <Route path="/train-booking" element={<TrainBooking />} />
+      <Route path="/flight-booking" element={<FlightBooking />} />
+      <Route path="/volvo-bus-booking" element={<VolvoBusBooking />} />
+      <Route path="/all_destinations" element={<HolidayTour />} />
+      <Route path="/student-tour" element={<StudentTour />} />
+      <Route path="/group-tour" element={<GroupTour />} />
+      <Route path="/honeymoon-tour" element={<HoneyMoonTour />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/service" element={<Service />} />
     </Routes>
    </BrowserRouter>
   </React.StrictMode>

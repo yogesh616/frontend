@@ -98,16 +98,16 @@ const Navbar = () => {
                 <ul className="holiday-tour-lists"></ul>
               </li>
               <li className="nested-li-special">
-                <a href="#" className="remove-decoration">Special Tour &nbsp;<i className="fa-solid fa-chevron-right"></i></a>
+                <a className="remove-decoration">Special Tour &nbsp;<i className="fa-solid fa-chevron-right"></i></a>
                 <ul className="special-tour-lists remove-decoration">
                   <li className="nested-li">
-                    <p><Link className="remove-decoration" to="/special-tour-packages?tourtype=student-tour">Student Tour</Link></p>
+                    <p><Link className="remove-decoration" to="/student-tour">Student Tour</Link></p>
                   </li>
                   <li className="nested-li">
-                    <p><Link className="remove-decoration" to="/special-tour-packages?tourtype=group-tour">Group Tour</Link></p>
+                    <p><Link className="remove-decoration" to="/group-tour">Group Tour</Link></p>
                   </li>
                   <li className="nested-li">
-                    <p><Link className="remove-decoration" to="/special-tour-packages?tourtype=honeymoon-tour">Honeymoon Tour</Link></p>
+                    <p><Link className="remove-decoration" to="/honeymoon-tour">Honeymoon Tour</Link></p>
                   </li>
                 </ul>
               </li>
