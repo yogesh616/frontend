@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import pay_online from '../images/pay-online.avif'
 import mount from '../media/tour/mount.jpg'
 import building from '../media/tour/building.avif'
+import Footer from "../components/Footer";
 
 function PayOnline() {
   return (
@@ -117,6 +118,7 @@ function PayOnline() {
         </div>
       </div>
     </section>
+    <Footer />
     </>
   )
 }

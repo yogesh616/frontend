@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer";
 const ContactUs = () => {
   return (
     <>
@@ -101,6 +101,7 @@ const ContactUs = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <Footer />
     </>
   );
 };

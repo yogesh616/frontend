@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from '../components/Navbar'
 import Train from '../images/train-booking.avif'
+import Footer from "../components/Footer";
 
 const TrainBookingForm = () => {
   const [formData, setFormData] = useState({
@@ -97,6 +98,7 @@ const TrainBookingForm = () => {
         </div>
       </div>
     </section>
+    <Footer />
    </>
   );
 };

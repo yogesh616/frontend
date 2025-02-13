@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar";
-import honeymoon from '../media/tour/honeymoon.avif'
+import dharamshala_tour from '../images/dharamshala-tour.avif'
 import Footer from "../components/Footer";
 
-const HoneyMoonTour = () => {
+const DharamshalaHolidayTour = () => {
     return (
      <>
      <Navbar />
@@ -11,7 +11,7 @@ const HoneyMoonTour = () => {
           <div className="himachal-holidays-contents-columns-sections">
             <h1>
               Yatra of Himalayas -
-              <span style={{ color: '#64a507' }}> Honeymoon Tour</span>
+              <span style={{ color: '#64a507' }}> Dharamshala Holiday Tour</span>
             </h1>
             
             <div className="small-holiday-packages">
@@ -19,13 +19,13 @@ const HoneyMoonTour = () => {
                 <i className="fa-solid fa-circle-check"></i> Enquire
               </h5>
               <img 
-                src={honeymoon} 
+                src={dharamshala_tour} 
                 alt="holiday package" 
                 className="small-holiday-packages-img" 
               />
-              <small>6 Nights/7 Days</small>
-              <h3>SHIMLA KULLU MANALI</h3>
-              <h4>Tour Code : Yatra-4</h4>
+              <small>9 Nights/10 Days</small>
+              <h3>DHARAMSHALA, MCLEODGANJ and DALHOUSIE</h3>
+              <h4>Tour Code : Yatra-3</h4>
               <div className="small-icons">
                 <i className="fa-solid fa-location-dot"></i>
                 <i className="fa-solid fa-car"></i>
@@ -39,10 +39,10 @@ const HoneyMoonTour = () => {
               <br />
               <hr />
               <div className="btns">
-                <a href="https://yatraofhimalayas.com/tour_details.php?tour=shimla-kullu-manali">
+                <a href="/shimla-kullu-manali">
                   View Details
                 </a>
-                <p>18000/-</p>
+                <p>22000/-</p>
               </div>
             </div>
   
@@ -113,4 +113,4 @@ const HoneyMoonTour = () => {
     );
   };
   
-  export default HoneyMoonTour;
+  export default DharamshalaHolidayTour;

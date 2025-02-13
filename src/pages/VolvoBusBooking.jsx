@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Volvo from "../images/volov-bus-booking.avif"
+import Footer from "../components/Footer";
 
 const VolvoBusBooking = () => {
   const [formData, setFormData] = useState({
@@ -98,6 +99,7 @@ const VolvoBusBooking = () => {
         </div>
       </div>
     </section>
+    <Footer />
     </>
   );
 };

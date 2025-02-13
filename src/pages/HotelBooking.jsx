@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 
 const HotelBooking = () => {
     const [formData, setFormData] = useState({
@@ -116,6 +118,7 @@ const HotelBooking = () => {
                 </div>
             </div>
         </section>
+        <Footer />
         </>
     );
 };

@@ -2,13 +2,13 @@ import Navbar from "../components/Navbar";
 import service from "../images/service.avif" 
 import dhramshala from "../images/dharamshala.jpg" 
 import shimla from "../images/shimla.avif" 
-
+import Footer from "../components/Footer";
 
 const Service = () => {
     return (
      <>
      <Navbar />
-     <section className="about-us-section">
+      <section className="about-us-section">
         <div className="about-us-columns">
           <div className="abous-us-content">
             <div className="about-title-content">
@@ -96,6 +96,7 @@ const Service = () => {
           </div>
         </div>
       </section>
+      <Footer /> 
      </>
     );
   };

@@ -20,6 +20,9 @@ import GroupTour from './pages/GroupTour';
 import HoneyMoonTour from './pages/HoneyMoonTour';
 import About from './pages/About';
 import Service from './pages/Service';
+import Enquire from './pages/Enquire';
+import DharamshalaHolidayTour from './pages/DharamshalaHolidayTour';
+import ShimlaHolidayTour from './pages/ShimlaHolidayTour';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -44,6 +47,9 @@ root.render(
       <Route path="/honeymoon-tour" element={<HoneyMoonTour />} />
       <Route path="/about" element={<About />} />
       <Route path="/service" element={<Service />} />
+      <Route path="/enquire" element={<Enquire />} />
+      <Route path="/dharamshala-holiday-tour" element={<DharamshalaHolidayTour />} />
+      <Route path="/shimla-holiday-tour" element={<ShimlaHolidayTour />} />
     </Routes>
    </BrowserRouter>
   </React.StrictMode>

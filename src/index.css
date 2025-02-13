@@ -10,6 +10,22 @@
   text-decoration: none;
 }
 
+
+.footer-gallary {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-gallary img {
+  width: 100px;
+  height: 60px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+
+
 .fa-regular,  .fa-circle-right {
   width: 15px;
   height: 15px;

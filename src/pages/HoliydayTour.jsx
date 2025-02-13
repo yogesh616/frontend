@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const destinations = [
   {
@@ -86,6 +87,7 @@ const HolidayTour = () => {
         <a href="#" className="bg-gray-200 px-4 py-2 rounded-md">1</a>
       </div>
     </section>
+    <Footer />
    </>
   );
 };

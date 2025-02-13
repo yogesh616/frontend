@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from '../components/Navbar'
 import Flight from "../images/flight-booking.avif"
-
+import Footer from "../components/Footer";
 const FlightBooking = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -97,6 +97,7 @@ const FlightBooking = () => {
         </div>
       </div>
     </section>
+    <Footer />
    </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer";
 const carData = [
   {
     id: 9,
@@ -94,6 +94,7 @@ const CarBooking = () => {
       </div>
     </section>
     <div/>
+    <Footer />
    </>
   );
 };

@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import about from "../images/about.avif"
+import Footer from "../components/Footer";
 const About = () => {
     return (
       <>
@@ -94,6 +95,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer />
       </>
     );
   };

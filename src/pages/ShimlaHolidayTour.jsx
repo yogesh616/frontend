@@ -1,8 +1,24 @@
 import Navbar from "../components/Navbar";
-import honeymoon from '../media/tour/honeymoon.avif'
+import dharamshala_tour from '../images/dharamshala-tour.avif'
 import Footer from "../components/Footer";
+import shimla_mountain from '../images/shimla/shimla_mountain.avif'
+import shimla_building from '../images/shimla/shimla_building.avif'
 
-const HoneyMoonTour = () => {
+const ShimlaHolidayTour = () => {
+    const tourData = [
+        {
+            image: shimla_mountain,
+            title: 'SHIMLA MANALI TOUR BY CAB',
+            code: 'Yatra-2',
+            price: 16999
+        },
+        {
+            image: shimla_building,
+            title: 'BEST OF SHIMLA MANALI BY CAR',
+            code: 'Yatra-1',
+            price: 14999
+        }
+    ]
     return (
      <>
      <Navbar />
@@ -11,40 +27,44 @@ const HoneyMoonTour = () => {
           <div className="himachal-holidays-contents-columns-sections">
             <h1>
               Yatra of Himalayas -
-              <span style={{ color: '#64a507' }}> Honeymoon Tour</span>
+              <span style={{ color: '#64a507' }}> Shimla Holiday Tour</span>
             </h1>
             
-            <div className="small-holiday-packages">
-              <h5>
-                <i className="fa-solid fa-circle-check"></i> Enquire
-              </h5>
-              <img 
-                src={honeymoon} 
-                alt="holiday package" 
-                className="small-holiday-packages-img" 
-              />
-              <small>6 Nights/7 Days</small>
-              <h3>SHIMLA KULLU MANALI</h3>
-              <h4>Tour Code : Yatra-4</h4>
-              <div className="small-icons">
-                <i className="fa-solid fa-location-dot"></i>
-                <i className="fa-solid fa-car"></i>
-                <i className="fa-solid fa-person"></i>
-                <i className="fa-solid fa-suitcase-rolling"></i>
-                <i className="fa-solid fa-mug-hot"></i>
-                <i className="fa-solid fa-utensils"></i>
-                <i className="fa-solid fa-camera"></i>
-                <i className="fa-sharp fa-solid fa-bed"></i>
+           {
+            tourData.map((data, index) => (
+                <div className="small-holiday-packages">
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i> Enquire
+                </h5>
+                <img 
+                  src={dharamshala_tour} 
+                  alt="holiday package" 
+                  className="small-holiday-packages-img" 
+                />
+                <small>5 Nights/6 Days</small>
+                <h3>{data.title}</h3>
+                <h4>Tour Code : {data.code}</h4>
+                <div className="small-icons">
+                  <i className="fa-solid fa-location-dot"></i>
+                  <i className="fa-solid fa-car"></i>
+                  <i className="fa-solid fa-person"></i>
+                  <i className="fa-solid fa-suitcase-rolling"></i>
+                  <i className="fa-solid fa-mug-hot"></i>
+                  <i className="fa-solid fa-utensils"></i>
+                  <i className="fa-solid fa-camera"></i>
+                  <i className="fa-sharp fa-solid fa-bed"></i>
+                </div>
+                <br />
+                <hr />
+                <div className="btns">
+                  <a href="/shimla-kullu-manali">
+                    View Details
+                  </a>
+                  <p>{data.price}/-</p>
+                </div>
               </div>
-              <br />
-              <hr />
-              <div className="btns">
-                <a href="https://yatraofhimalayas.com/tour_details.php?tour=shimla-kullu-manali">
-                  View Details
-                </a>
-                <p>18000/-</p>
-              </div>
-            </div>
+            ))
+           }
   
             <div className="pagination">
               <a href="" className="active">1</a>
@@ -113,4 +133,4 @@ const HoneyMoonTour = () => {
     );
   };
   
-  export default HoneyMoonTour;
+  export default ShimlaHolidayTour;

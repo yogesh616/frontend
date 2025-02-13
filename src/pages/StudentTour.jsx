@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const StudentTour = () => {
   const [formData, setFormData] = useState({
@@ -167,6 +168,7 @@ const StudentTour = () => {
     </div>
      
     </section>
+    <Footer />
     </>
   );
 };

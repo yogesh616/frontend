@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import our_policy from '../images/our-policy.avif'
+import Footer from "../components/Footer";
 
 const OurPolicy = () => {
     const [activeIndexes, setActiveIndexes] = useState([]);
@@ -234,6 +235,7 @@ const OurPolicy = () => {
         </div>
       </div>
     </section>
+    <Footer />
    </>
   );
 };
